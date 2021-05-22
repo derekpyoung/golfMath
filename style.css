@@ -1,0 +1,106 @@
+.bets {
+  display: inline;
+
+  color: #9E86F4;
+
+}
+.perHoleCost{
+  display: block;
+}
+H1{
+  padding: 5px;
+  border-bottom: 1px solid black;
+  text-align: center
+
+}
+
+.wins{
+  display: inline;
+}
+.splits{
+  display: inline-block;
+}
+
+.players{
+
+  display: inline-block;
+}
+#btn{
+  border-radius: 4px;
+    padding: 10px;
+    height: 50px;
+    width: 150px;
+    background-color: #9E86F4;
+    color: white;
+    font-weight: bold;
+    border: none;
+    align-items: left;
+}
+.perClosestCost{
+  display: block;
+
+}
+.perLongestCost{
+  display: inline-block;
+
+}
+
+.holesWon{
+  display: inline-block;
+  padding: 4%;
+
+}
+
+.lds{
+  padding: 4%;
+  display: inline-block
+
+}
+.kps{
+  padding: 4%;
+  display: inline-block;
+}
+
+li{
+  display: inline-block;
+  padding-top: 2%;
+  padding-left: 6%;
+  padding-right: 6%;
+  font-size: 20px;
+}
+
+.output{
+  font-size: 20px;
+  display: flex;
+  align-content: space-evenly;
+  height: 300px;
+  width: 100%;
+  font-weight: bold;
+
+
+}
+.playerOneOutput{
+  display: inline-block
+  float: left;
+  width: 200px;
+
+}
+
+.playerTwoOutput{
+  display: inline-block;
+  float: left;
+  width: 200px;
+}
+
+.PlayerThreeOutput{
+  display: inline-block;
+  float: left;
+  width: 200px;
+}
+.playerFourOutput{
+  display: inline-block;
+  float: left;
+  width: 200px;
+
+
+}
