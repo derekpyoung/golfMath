@@ -10,21 +10,23 @@
 H1{
   padding: 5px;
   border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
   text-align: center
 
 }
 
 
-#btn{
+#btn, #btn-players{
   border-radius: 4px;
     padding: 10px;
     height: 50px;
     width: 150px;
-    background-color: #9E86F4;
+    background-color: #D9C3D7;
     color: white;
     font-weight: bold;
     border: none;
-    align-items: left;
+    align-items: center;
 }
 .perClosestCost{
   display: block;
@@ -39,6 +41,10 @@ H1{
   display: inline-block;
   padding: 4%;
 
+}
+label {
+  font-size: 10px;
+  color: #BFBFBD;
 }
 
 .lds{
@@ -93,9 +99,6 @@ H1{
     color: white;
   }
 
-  *:focus {
-  outline: 0 !important;  
-  }
 
 
   #playerOutput th {

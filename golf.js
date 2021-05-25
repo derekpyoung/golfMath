@@ -5,6 +5,7 @@ var holes = 18;
 
 
 
+
 function submit() {
   var holeBet = document.getElementById('perHole').value;
   var ldBet = document.getElementById('longestCost').value;
@@ -203,6 +204,38 @@ document.getElementById('playerTwoName').innerHTML = playerTwo.name.toUpperCase(
 document.getElementById('playerThreeName').innerHTML = playerThree.name.toUpperCase();
 document.getElementById('playerFourName').innerHTML = playerFour.name.toUpperCase();
 
+
+
+
+}
+
+function save(){
+  playerOne.name = document.getElementById('playerOne').value;
+  playerTwo.name = document.getElementById('playerTwo').value;
+  playerThree.name = document.getElementById('playerThree').value;
+  playerFour.name = document.getElementById('playerFour').value;
+
+
+
+document.getElementById('oneWinsName').innerHTML = " " + playerOne.name;
+document.getElementById('oneLdsName').innerHTML = " " + playerOne.name;
+document.getElementById('oneKpsName').innerHTML = " " + playerOne.name;
+document.getElementById('oneSplitsName').innerHTML = " " + playerOne.name;
+
+document.getElementById('twoWinsName').innerHTML = " " + playerTwo.name;
+document.getElementById('twoLdsName').innerHTML = " " + playerTwo.name;
+document.getElementById('twoKpsName').innerHTML = " " + playerTwo.name;
+document.getElementById('twoSplitsName').innerHTML = " " + playerTwo.name;
+
+document.getElementById('threeWinsName').innerHTML = " " + playerThree.name;
+document.getElementById('threeLdsName').innerHTML = " " + playerThree.name;
+document.getElementById('threeKpsName').innerHTML = " " + playerThree.name;
+document.getElementById('threeSplitsName').innerHTML = " " + playerThree.name;
+
+document.getElementById('fourWinsName').innerHTML = " " + playerFour.name;
+document.getElementById('fourLdsName').innerHTML = " " + playerFour.name;
+document.getElementById('fourKpsName').innerHTML = " " + playerFour.name;
+document.getElementById('fourSplitsName').innerHTML = " " + playerFour.name;
 
 
 

@@ -42,90 +42,100 @@
       </tr>
       <tr>
         <td><input type="text" id="playerOne"></td>
-        <td><input type="text" id="oneWins" ></td>
-        <td><input type="text" id="oneLds" size="10" ></td>
-        <td><input type="text" id="oneKps" size="10"></td>
-        <td><input type="text" id="splitsOne" size="10"></td>
+        <td><input type="text" id="oneWins" ><label id="oneWinsName"></label></td>
+        <td><input type="text" id="oneLds" size="10" ><label id="oneLdsName"></label></td>
+        <td><input type="text" id="oneKps" size="10"><label id="oneKpsName"></label></td>
+        <td><input type="text" id="splitsOne" size="10"><label id="oneSplitsName"></label></td>
       </tr>
 
       <tr>
         <td><input type="text" id="playerTwo"></td>
-        <td><input type="text" id="twoWins" ></td>
-        <td><input type="text" id="twoLds" size="10" ></td>
-        <td><input type="text" id="twoKps" size="10"></td>
-        <td><input type="text" id="splitsTwo" size="10"></td>
+        <td><input type="text" id="twoWins" ><label id="twoWinsName"></label></td>
+        <td><input type="text" id="twoLds" size="10" ><label id="twoLdsName"></label></td>
+        <td><input type="text" id="twoKps" size="10"><label id="twoKpsName"></label></td>
+        <td><input type="text" id="splitsTwo" size="10"><label id="twoSplitsName"></label></td>
       </tr>
 
       <tr>
         <td><input type="text" id="playerThree"></td>
-        <td><input type="text" id="threeWins"></td>
-        <td><input type="text" id="threeLds" size="10" ></td>
-        <td><input type="text" id="threeKps" size="10"></td>
-        <td><input type="text" id="splitsThree" size="10"></td>
+        <td><input type="text" id="threeWins"><label id="threeWinsName"></label></td>
+        <td><input type="text" id="threeLds" size="10" ><label id="threeLdsName"></label></td>
+        <td><input type="text" id="threeKps" size="10"><label id="threeKpsName"></label></td>
+        <td><input type="text" id="splitsThree" size="10"><label id="threeSplitsName"></label></td>
       </tr>
 
       <tr>
         <td><input type="text" id="playerFour"></td>
-        <td><input type="text" id="fourWins" ></td>
-        <td><input type="text" id="fourLds" size="10"></td>
-        <td><input type="text" id="fourKps" size="10"></td>
-        <td><input type="text" id="splitsFour" size="10"></td>
+        <td><input type="text" id="fourWins" ><label id="fourWinsName"></label></td>
+        <td><input type="text" id="fourLds" size="10"><label id="fourLdsName"></label></td>
+        <td><input type="text" id="fourKps" size="10"><label id="fourKpsName"></label></td>
+        <td><input type="text" id="splitsFour" size="10"><label id="fourSplitsName"></label></td>
       </tr>
 
 </table>
 
 <br><br><br>
+<button id="btn-players" type="button" onclick= save(); >Save Players</button>
+<br>
+<!-- <p>Save players then enter and submit score.</p> -->
+<br>
 
 <button id="btn" type="button" onclick= submit(); >Submit Scores</button>
 <div class="output">
-  <br><br><br>
+  <br><br>
 
 
 <table id="playerOutput">
   <tr>
     <th>Players</th>
+    <th>Net Total</th>
     <th>Holes Won</th>
     <th>Long Drive</th>
     <th>Closest to</th>
     <th>Splits</th>
-    <th>Net Total</th>
+
   </tr>
   <tr>
     <td id="playerOneName"></td>
+    <td id="playerOneCash"></td>
     <td id="playerOneHolesTotal"></td>
     <td id="playerOneKpPayout"></td>
     <td id="playerOneLdFinal"></td>
     <td id="playerOneSplits"></td>
-    <td id="playerOneCash"></td>
+
   </tr>
 
   <tr>
     <td id="playerTwoName"></td>
+    <td id="playerTwoCash"></td>
     <td id="playerTwoHolesTotal"></td>
     <td id="playerTwoKpPayout"></td>
     <td id="playerTwoLdFinal"></td>
     <td id="playerTwoSplits"></td>
-    <td id="playerTwoCash"></td>
+
   </tr>
 
   <tr>
     <td id="playerThreeName"></td>
+    <td id="playerThreeCash"></td>
     <td id="playerThreeHolesTotal"></td>
     <td id="playerThreeKpPayout"></td>
     <td id="playerThreeLdFinal"></td>
     <td id="playerThreeSplits"></td>
-    <td id="playerThreeCash"></td>
+
   </tr>
 
   <tr>
     <td id="playerFourName"></td>
+    <td id="playerFourCash"></td>
     <td id="playerFourHolesTotal"></td>
     <td id="playerFourKpPayout"></td>
     <td id="playerFourLdFinal"></td>
     <td id="playerFourSplits"></td>
-    <td id="playerFourCash"></td>
+
   </tr>
 </table>
+<br><br><br><br>
   <!-- <div class="playerOneOutput">
     <div id="playerOneHolesTotal"></div>
     <div id="playerOneKpPayout"></div>
