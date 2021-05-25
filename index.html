@@ -9,81 +9,135 @@
 
   </head>
   <body>
-    <div class="bets">
-      <div class="perHoleCost">
-        <h3>Bet per hole</h3>
-        <input type="text" id="perHole">
-      </div>
+    <table id="betInputs">
+      <tr>
+        <th>Bet per hole</th>
+        <th>Longest Drive Bet</th>
+        <th>Closest to pin Bet</th>
+      </tr>
+      <tr>
+        <td><input type="text" id="perHole"></td>
+        <td><input type="text" id ="longestCost" value=""></td>
+        <td><input type="text" id ="closestCost" value=""></td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
 
-      <div class="LongestCost">
-        <h3>Longest Drive Bet</h3>
-        <input type="text" id ="longestCost" value="">
-      </div>
 
-      <div class="perClosestCost">
-        <h3>Closest to pin Bet</h3>
-        <input type="text" id ="closestCost" value="">
-      </div>
-
-    </div>
 
 
 
   <div class="wins">
+    <table id="playerInputs">
+      <tr>
+        <th>Players</th>
+        <th>Holes Won</th>
+        <th>Long Drive</th>
+        <th>Closest to</th>
+        <th>Split Holes</th>
 
-    <div class="players">
-      <h3>Players</h3>
-      <input type="text" id="playerOne"> <br>
-      <input type="text" id="playerTwo"><br>
-      <input type="text" id="playerThree"><br>
-      <input type="text" id="playerFour"><br>
-    </div>
-    <div class="holesWon">
-      <h3>Holes won</h3>
-      <input type="text" id="oneWins" ><br>
-      <input type="text" id="twoWins" ><br>
-      <input type="text" id="threeWins"><br>
-      <input type="text" id="fourWins" ><br>
-    </div>
-    <div class="lds">
-      <h3>LongestDicks</h3>
-      <input type="text" id="oneLds" size="10" ><br>
-      <input type="text" id="twoLds" size="10" ><br>
-      <input type="text" id="threeLds" size="10" ><br>
-      <input type="text" id="fourLds" size="10" ><br>
-    </div>
-    <div class="kps">
-      <h3>Klosest to</h3>
-      <input type="text" id="oneKps" size="10"><br>
-      <input type="text" id="twoKps" size="10"><br>
-      <input type="text" id="threeKps" size="10"><br>
-      <input type="text" id="fourKps" size="10"><br>
-    </div>
-    <div class="splits">
-      <h3>Splits</h3>
-      <input type="text" id="splitsOne" size="10"><br>
-      <input type="text" id="splitsTwo" size="10"><br>
-      <input type="text" id="splitsThree" size="10"><br>
-      <input type="text" id="splitsFour" size="10"><br>
+      </tr>
+      <tr>
+        <td><input type="text" id="playerOne"></td>
+        <td><input type="text" id="oneWins" ></td>
+        <td><input type="text" id="oneLds" size="10" ></td>
+        <td><input type="text" id="oneKps" size="10"></td>
+        <td><input type="text" id="splitsOne" size="10"></td>
+      </tr>
 
-    </div>
-</div>
+      <tr>
+        <td><input type="text" id="playerTwo"></td>
+        <td><input type="text" id="twoWins" ></td>
+        <td><input type="text" id="twoLds" size="10" ></td>
+        <td><input type="text" id="twoKps" size="10"></td>
+        <td><input type="text" id="splitsTwo" size="10"></td>
+      </tr>
 
-<button id="btn" type="button" onclick= submit(); >Click Bitch!</button>
+      <tr>
+        <td><input type="text" id="playerThree"></td>
+        <td><input type="text" id="threeWins"></td>
+        <td><input type="text" id="threeLds" size="10" ></td>
+        <td><input type="text" id="threeKps" size="10"></td>
+        <td><input type="text" id="splitsThree" size="10"></td>
+      </tr>
 
+      <tr>
+        <td><input type="text" id="playerFour"></td>
+        <td><input type="text" id="fourWins" ></td>
+        <td><input type="text" id="fourLds" size="10"></td>
+        <td><input type="text" id="fourKps" size="10"></td>
+        <td><input type="text" id="splitsFour" size="10"></td>
+      </tr>
+
+</table>
+
+<br><br><br>
+
+<button id="btn" type="button" onclick= submit(); >Submit Scores</button>
 <div class="output">
+  <br><br><br>
 
-  <div class="playerOneOutput">
+
+<table id="playerOutput">
+  <tr>
+    <th>Players</th>
+    <th>Holes Won</th>
+    <th>Long Drive</th>
+    <th>Closest to</th>
+    <th>Splits</th>
+    <th>Net Total</th>
+  </tr>
+  <tr>
+    <td id="playerOneName"></td>
+    <td id="playerOneHolesTotal"></td>
+    <td id="playerOneKpPayout"></td>
+    <td id="playerOneLdFinal"></td>
+    <td id="playerOneSplits"></td>
+    <td id="playerOneCash"></td>
+  </tr>
+
+  <tr>
+    <td id="playerTwoName"></td>
+    <td id="playerTwoHolesTotal"></td>
+    <td id="playerTwoKpPayout"></td>
+    <td id="playerTwoLdFinal"></td>
+    <td id="playerTwoSplits"></td>
+    <td id="playerTwoCash"></td>
+  </tr>
+
+  <tr>
+    <td id="playerThreeName"></td>
+    <td id="playerThreeHolesTotal"></td>
+    <td id="playerThreeKpPayout"></td>
+    <td id="playerThreeLdFinal"></td>
+    <td id="playerThreeSplits"></td>
+    <td id="playerThreeCash"></td>
+  </tr>
+
+  <tr>
+    <td id="playerFourName"></td>
+    <td id="playerFourHolesTotal"></td>
+    <td id="playerFourKpPayout"></td>
+    <td id="playerFourLdFinal"></td>
+    <td id="playerFourSplits"></td>
+    <td id="playerFourCash"></td>
+  </tr>
+</table>
+  <!-- <div class="playerOneOutput">
     <div id="playerOneHolesTotal"></div>
     <div id="playerOneKpPayout"></div>
     <div id ="playerOneLdFinal"></div>
     <div id="playerOneSplits"></div>
     <div id="playerOneCash"></div>
-  </div>
+  </div> -->
 
 
-
+<!--
   <div class="playerTwoOutput">
+
     <div id="playerTwoHolesTotal"></div>
     <div id="playerTwoKpPayout"></div>
     <div id ="playerTwoLdFinal"></div>
@@ -110,7 +164,7 @@
     <div id="playerFourSplits"></div>
     <div id="playerFourCash"></div>
   </div>
-
+ -->
 
 
 

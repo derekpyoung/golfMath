@@ -14,17 +14,7 @@ H1{
 
 }
 
-.wins{
-  display: inline;
-}
-.splits{
-  display: inline-block;
-}
 
-.players{
-
-  display: inline-block;
-}
 #btn{
   border-radius: 4px;
     padding: 10px;
@@ -60,47 +50,59 @@ H1{
   padding: 4%;
   display: inline-block;
 }
+  #playerInputs, #betInputs, #playerOutput {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
 
-li{
-  display: inline-block;
-  padding-top: 2%;
-  padding-left: 6%;
-  padding-right: 6%;
-  font-size: 20px;
-}
+  #playerInputs td, #betInputs td , #playerOutput td{
+    border: 1px solid #ddd;
+    padding: 8px;
 
-.output{
-  font-size: 20px;
-  display: flex;
-  align-content: space-evenly;
-  height: 300px;
-  width: 100%;
-  font-weight: bold;
+  }
+  #playerInputs td input {
 
 
-}
-.playerOneOutput{
-  display: inline-block
-  float: left;
-  width: 200px;
+  }
 
-}
-
-.playerTwoOutput{
-  display: inline-block;
-  float: left;
-  width: 200px;
-}
-
-.PlayerThreeOutput{
-  display: inline-block;
-  float: left;
-  width: 200px;
-}
-.playerFourOutput{
-  display: inline-block;
-  float: left;
-  width: 200px;
+  #playerInputs tr:nth-child(even){background-color: #f2f2f2;}
+  #betInputs tr:nth-child(even){background-color: #f2f2f2;}
+  #playerOutput tr:nth-child(even) {background-color: #f2f2f2;}
 
 
-}
+  #playerInputs tr:hover {background-color: #ddd;}
+  #betInputs tr:hover {background-color: #ddd;}
+  #playerOutput tr:hover {background-color: #ddd;}
+
+  #playerInputs th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    text-align: left;
+    background-color: #9E86F4;
+    color: white;
+  }
+
+  #betInputs th {
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #30d5c8;
+    color: white;
+  }
+
+  *:focus {
+  outline: 0 !important;  
+  }
+
+
+  #playerOutput th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    text-align: left;
+    background-color: #d1b866;
+    color: white;
+  }

@@ -169,45 +169,46 @@ var holesTotalFour = playerFourWins - playerFourLosses;
 
 
 
-document.getElementById('playerOneHolesTotal').innerHTML = playerOne.name +
-                                '<br>' +  holesTotalOne + "$ on holes Won";
-document.getElementById('playerTwoHolesTotal').innerHTML = playerTwo.name +
-                                  '<br>' + holesTotalTwo + "$ on holes Won";
-document.getElementById('playerThreeHolesTotal').innerHTML = playerThree.name +
-                                  '<br>' + holesTotalThree + "$ on holes Won";
-document.getElementById('playerFourHolesTotal').innerHTML = playerFour.name +
-                                  ' <br>'+ holesTotalFour + "$ on holes Won";
+document.getElementById('playerOneHolesTotal').innerHTML = holesTotalOne + "$";
+document.getElementById('playerTwoHolesTotal').innerHTML = holesTotalTwo + "$ ";
+document.getElementById('playerThreeHolesTotal').innerHTML = holesTotalThree + "$";
+document.getElementById('playerFourHolesTotal').innerHTML = holesTotalFour + "$";
 
-document.getElementById('playerOneKpPayout').innerHTML = playerOneKpTotal + "$ on closest to";
-document.getElementById('playerTwoKpPayout').innerHTML = playerTwoKpTotal + " $ on closest to";
-document.getElementById('playerThreeKpPayout').innerHTML = playerThreeKpTotal + " $ on closest to";
-document.getElementById('playerFourKpPayout').innerHTML = playerFourKpTotal + " $ on closest to";
+document.getElementById('playerOneKpPayout').innerHTML = playerOneKpTotal + "$";
+document.getElementById('playerTwoKpPayout').innerHTML = playerTwoKpTotal + "$";
+document.getElementById('playerThreeKpPayout').innerHTML = playerThreeKpTotal + "$";
+document.getElementById('playerFourKpPayout').innerHTML = playerFourKpTotal + "$";
 
-document.getElementById('playerOneLdFinal').innerHTML = ldFinalOne + "$ long drive wins ";
-document.getElementById('playerTwoLdFinal').innerHTML = ldFinalTwo + "$ long drive wins ";
-document.getElementById('playerThreeLdFinal').innerHTML = ldFinalThree + "$ long drive wins ";
-document.getElementById('playerFourLdFinal').innerHTML = ldFinalFour + "$ long drive wins ";
+document.getElementById('playerOneLdFinal').innerHTML = ldFinalOne + "$";
+document.getElementById('playerTwoLdFinal').innerHTML = ldFinalTwo + "$";
+document.getElementById('playerThreeLdFinal').innerHTML = ldFinalThree + "$";
+document.getElementById('playerFourLdFinal').innerHTML = ldFinalFour + "$";
 
-document.getElementById('playerOneSplits').innerHTML = splitOneTot + "$ splits money";
-document.getElementById('playerTwoSplits').innerHTML = splitTwoTot + "$ splits money";
-document.getElementById('playerThreeSplits').innerHTML = splitThreeTot + "$ splits money";
-document.getElementById('playerFourSplits').innerHTML = splitFourTot + "$ splits money";
+document.getElementById('playerOneSplits').innerHTML = splitOneTot + "$";
+document.getElementById('playerTwoSplits').innerHTML = splitTwoTot + "$";
+document.getElementById('playerThreeSplits').innerHTML = splitThreeTot + "$";
+document.getElementById('playerFourSplits').innerHTML = splitFourTot + "$";
 
 document.getElementById('playerOneCash').innerHTML = parseInt(holesTotalOne + playerOneKpTotal
-                                                    + ldFinalOne + splitOneTot) + "$ net total cash!"
+                                                    + ldFinalOne + splitOneTot) + "$ net total!"
 document.getElementById('playerTwoCash').innerHTML = parseInt(holesTotalTwo + playerTwoKpTotal
-                                                    + ldFinalTwo + splitTwoTot) + "$ net total cash!"
+                                                    + ldFinalTwo + splitTwoTot) + "$ net total!"
 document.getElementById('playerThreeCash').innerHTML = parseInt(holesTotalThree + playerThreeKpTotal
-                                                    + ldFinalThree + splitThreeTot) + "$ net total cash!"
+                                                    + ldFinalThree + splitThreeTot) + "$ net total!"
 document.getElementById('playerFourCash').innerHTML = parseInt(holesTotalFour + playerFourKpTotal
-                                                    + ldFinalFour + splitFourTot) + "$ net total cash!"
+                                                    + ldFinalFour + splitFourTot) + "$ net total!"
 
-
+document.getElementById('playerOneName').innerHTML = playerOne.name.toUpperCase();
+document.getElementById('playerTwoName').innerHTML = playerTwo.name.toUpperCase();
+document.getElementById('playerThreeName').innerHTML = playerThree.name.toUpperCase();
+document.getElementById('playerFourName').innerHTML = playerFour.name.toUpperCase();
 
 
 
 
 }
+
+
 
 function setUpEventListeners() {
   document.getElementById('btn').addEventListener("click", submit);
