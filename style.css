@@ -17,16 +17,32 @@ H1{
 }
 
 
-#btn, #btn-players{
+#btn{
   border-radius: 4px;
     padding: 10px;
     height: 50px;
     width: 150px;
-    background-color: #D9C3D7;
+    background-color: #70486d;
     color: white;
     font-weight: bold;
     border: none;
     align-items: center;
+}
+
+#btn:hover, #btn-players:hover{
+  background-color: #D9C3D7;
+}
+
+
+#btn-players {
+  border-radius: 8px;
+  height: 25px;
+  width: 75px;
+  background-color: #70486d;
+  color: white;
+  font-weight: bold;
+  border: none;
+  align-items: center;
 }
 .perClosestCost{
   display: block;
