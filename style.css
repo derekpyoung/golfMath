@@ -9,10 +9,12 @@
 }
 H1{
   padding: 5px;
+  text-shadow: 2px 2px 5px #ffb6c1;
   border-bottom: 1px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
   text-align: center
+
 
 }
 
@@ -27,6 +29,8 @@ H1{
     font-weight: bold;
     border: none;
     align-items: center;
+    box-shadow: 8px 8px 5px pink;
+
 }
 
 #btn:hover, #btn-players:hover{
@@ -43,6 +47,7 @@ H1{
   font-weight: bold;
   border: none;
   align-items: center;
+  box-shadow: 4px 4px 2.5px grey;
 }
 .perClosestCost{
   display: block;
@@ -75,7 +80,9 @@ label {
   #playerInputs, #betInputs, #playerOutput {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
+
     width: 100%;
+    box-shadow: 8px 8px 5px grey;
   }
 
   #playerInputs td, #betInputs td , #playerOutput td{
@@ -104,6 +111,7 @@ label {
     text-align: left;
     background-color: #9E86F4;
     color: white;
+    text-shadow: 2px 2px 3px black;
   }
 
   #betInputs th {
@@ -113,6 +121,7 @@ label {
     text-align: left;
     background-color: #30d5c8;
     color: white;
+    text-shadow: 2px 2px 3px black;
   }
 
 
@@ -124,4 +133,5 @@ label {
     text-align: left;
     background-color: #d1b866;
     color: white;
+    text-shadow: 2px 2px 3px black;
   }
