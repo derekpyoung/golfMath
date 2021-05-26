@@ -35,6 +35,7 @@ H1{
 
 #btn:hover, #btn-players:hover{
   background-color: #D9C3D7;
+  color: black;
 }
 
 
@@ -109,9 +110,11 @@ label {
     padding-bottom: 12px;
     padding-left: 12px;
     text-align: left;
-    background-color: #9E86F4;
+    /* background-color: #9E86F4; */
+    background-image: linear-gradient(#9E86F4, grey);
     color: white;
     text-shadow: 2px 2px 3px black;
+
   }
 
   #betInputs th {
@@ -119,7 +122,8 @@ label {
     padding-left: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #30d5c8;
+    /* background-color: #30d5c8; */
+    background-image: linear-gradient(#30d5c8, grey);
     color: white;
     text-shadow: 2px 2px 3px black;
   }
@@ -131,7 +135,8 @@ label {
     padding-bottom: 12px;
     padding-left: 12px;
     text-align: left;
-    background-color: #d1b866;
+    /* background-color: #d1b866; */
+    background-image: linear-gradient(#d1b866, grey);
     color: white;
     text-shadow: 2px 2px 3px black;
   }
