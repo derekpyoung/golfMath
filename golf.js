@@ -66,15 +66,15 @@ function submit() {
 
   var totalHolesWon = parseInt(playerOne.totalWins) + parseInt(playerTwo.totalWins) +
                           parseInt(playerThree.totalWins) + parseInt(playerFour.totalWins);
-  console.log(totalHolesWon + " total holes won");
+                          console.log(totalHolesWon + " total holes won");
 
   var totalKps = parseInt(playerOne.kps) + parseInt(playerTwo.kps) + parseInt(playerThree.kps)
                   + parseInt(playerFour.kps)
-  console.log(totalKps + " total Kps won");
+                  console.log(totalKps + " total Kps won");
 
   var totalLds = parseInt(playerOne.lds) + parseInt(playerTwo.lds) + parseInt(playerThree.lds)
                   + parseInt(playerFour.lds)
-  console.log(totalLds + " total LDs won");
+                  console.log(totalLds + " total LDs won");
 
 
   var kpPayoutOne = parseInt((playerOne.kps) * kpBet) * 3;
@@ -236,10 +236,36 @@ document.getElementById('fourWinsName').innerHTML = " " + playerFour.name;
 document.getElementById('fourLdsName').innerHTML = " " + playerFour.name;
 document.getElementById('fourKpsName').innerHTML = " " + playerFour.name;
 document.getElementById('fourSplitsName').innerHTML = " " + playerFour.name;
-
+toggleDisabled();
 
 
 }
+
+function toggleDisabled(poop){
+      if(!poop && document.getElementById('playerOne').name.length > 0) {
+        document.getElementById('oneWins').removeAttribute("disabled");
+        document.getElementById('oneLds').removeAttribute("disabled");
+        document.getElementById('oneKps').removeAttribute("disabled")
+        document.getElementById('splitsOne').removeAttribute("disabled")
+      } if (!poop && document.getElementById('playerTwo').name.length > 0) {
+        document.getElementById('twoWins').removeAttribute("disabled");
+        document.getElementById('twoLds').removeAttribute("disabled");
+        document.getElementById('twoKps').removeAttribute("disabled")
+        document.getElementById('splitsTwo').removeAttribute("disabled")
+      } if (!poop && document.getElementById('playerThree').name.length > 0) {
+        document.getElementById('threeWins').removeAttribute("disabled");
+        document.getElementById('threeLds').removeAttribute("disabled");
+        document.getElementById('threeKps').removeAttribute("disabled")
+        document.getElementById('splitsThree').removeAttribute("disabled")
+      } if (!poop && document.getElementById('playerFour').name.length > 0) {
+        document.getElementById('fourWins').removeAttribute("disabled");
+        document.getElementById('fourLds').removeAttribute("disabled");
+        document.getElementById('fourKps').removeAttribute("disabled")
+        document.getElementById('splitsFour').removeAttribute("disabled")
+      }
+  }
+
+
 
 
 

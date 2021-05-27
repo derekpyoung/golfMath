@@ -29,7 +29,7 @@ H1{
     font-weight: bold;
     border: none;
     align-items: center;
-    box-shadow: 8px 8px 5px pink;
+    box-shadow: 4px 4px 2.5px grey;
 
 }
 
@@ -48,7 +48,7 @@ H1{
   font-weight: bold;
   border: none;
   align-items: center;
-  box-shadow: 4px 4px 2.5px grey;
+  box-shadow: 3px 3px 2.5px grey;
 }
 .perClosestCost{
   display: block;
@@ -83,7 +83,7 @@ label {
     border-collapse: collapse;
 
     width: 100%;
-    box-shadow: 8px 8px 5px grey;
+    box-shadow: 4px 4px 3px grey;
   }
 
   #playerInputs td, #betInputs td , #playerOutput td{
@@ -110,10 +110,10 @@ label {
     padding-bottom: 12px;
     padding-left: 12px;
     text-align: left;
-    /* background-color: #9E86F4; */
-    background-image: linear-gradient(#9E86F4, grey);
+     background-color: #9E86F4;
+
     color: white;
-    text-shadow: 2px 2px 3px black;
+    text-shadow: 1px 1px 2px black;
 
   }
 
@@ -122,10 +122,9 @@ label {
     padding-left: 12px;
     padding-bottom: 12px;
     text-align: left;
-    /* background-color: #30d5c8; */
-    background-image: linear-gradient(#30d5c8, grey);
+     background-color: #30d5c8;
     color: white;
-    text-shadow: 2px 2px 3px black;
+    text-shadow: 1px 1px 2px black;
   }
 
 
@@ -135,8 +134,7 @@ label {
     padding-bottom: 12px;
     padding-left: 12px;
     text-align: left;
-    /* background-color: #d1b866; */
-    background-image: linear-gradient(#d1b866, grey);
+    background-color: #d1b866;
     color: white;
     text-shadow: 2px 2px 3px black;
 
