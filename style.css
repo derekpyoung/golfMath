@@ -17,6 +17,14 @@ H1{
 
 
 }
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+
+}
+
 
 
 #btn{
