@@ -4,6 +4,9 @@
   color: #9E86F4;
 
 }
+body{
+  
+}
 .perHoleCost{
   display: block;
 }
@@ -22,6 +25,7 @@ img{
   margin-left: auto !important;
   margin-right: auto !important;
   width: 20% !important;
+
 
 
 }
@@ -119,7 +123,8 @@ label {
     padding-bottom: 12px;
     padding-left: 12px;
     text-align: left;
-     background-color: #9E86F4;
+    background-color: #9E86F4;
+    opacity: 85%;
 
     color: white;
     text-shadow: 1px 1px 2px black;
@@ -132,8 +137,10 @@ label {
     padding-bottom: 12px;
     text-align: left;
      background-color: #30d5c8;
+     opacity: 85%;
     color: white;
     text-shadow: 1px 1px 2px black;
+
   }
 
 
@@ -144,6 +151,7 @@ label {
     padding-left: 12px;
     text-align: left;
     background-color: #d1b866;
+    opacity: 85%;
     color: white;
     text-shadow: 1px 1px 2px black;
 
